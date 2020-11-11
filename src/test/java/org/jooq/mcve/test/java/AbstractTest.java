@@ -15,7 +15,7 @@ public abstract class AbstractTest {
 
     @Before
     public void setup() throws Exception {
-        connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/choreoplayer_studio", "postgres", "poietico");
+        connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/mcve", "postgres", "poietico");
         ctx = DSL.using(connection);
     }
 
