@@ -25,7 +25,7 @@ object DefaultCatalog {
 class DefaultCatalog extends CatalogImpl("") {
 
   /**
-   * The schema <code>MCVE</code>.
+   * The schema <code>mcve</code>.
    */
   lazy val MCVE = Mcve.MCVE
 

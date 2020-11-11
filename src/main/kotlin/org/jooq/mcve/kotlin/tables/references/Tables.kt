@@ -4,11 +4,11 @@
 package org.jooq.mcve.kotlin.tables.references
 
 
-import org.jooq.mcve.kotlin.tables.Test
+import org.jooq.mcve.kotlin.tables.MyTable
 
 
 
 /**
- * The table <code>MCVE.TEST</code>.
+ * The table <code>mcve.my_table</code>.
  */
-val TEST = Test.TEST
+val MY_TABLE = MyTable.MY_TABLE

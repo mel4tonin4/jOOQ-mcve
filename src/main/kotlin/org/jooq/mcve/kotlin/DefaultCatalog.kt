@@ -24,7 +24,7 @@ open class DefaultCatalog : CatalogImpl("") {
     }
 
     /**
-     * The schema <code>MCVE</code>.
+     * The schema <code>mcve</code>.
      */
     val MCVE get() = Mcve.MCVE
 

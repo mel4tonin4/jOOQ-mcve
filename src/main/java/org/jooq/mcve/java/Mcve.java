@@ -9,8 +9,10 @@ import java.util.List;
 
 import org.jooq.Catalog;
 import org.jooq.Table;
+import org.jooq.UDT;
 import org.jooq.impl.SchemaImpl;
-import org.jooq.mcve.java.tables.Test;
+import org.jooq.mcve.java.tables.MyTable;
+import org.jooq.mcve.java.udt.MyUdt;
 
 
 /**
@@ -22,20 +24,20 @@ public class Mcve extends SchemaImpl {
     private static final long serialVersionUID = 1L;
 
     /**
-     * The reference instance of <code>MCVE</code>
+     * The reference instance of <code>mcve</code>
      */
     public static final Mcve MCVE = new Mcve();
 
     /**
-     * The table <code>MCVE.TEST</code>.
+     * The table <code>mcve.my_table</code>.
      */
-    public final Test TEST = Test.TEST;
+    public final MyTable MY_TABLE = MyTable.MY_TABLE;
 
     /**
      * No further instances allowed
      */
     private Mcve() {
-        super("MCVE", null);
+        super("mcve", null);
     }
 
 
@@ -47,6 +49,12 @@ public class Mcve extends SchemaImpl {
     @Override
     public final List<Table<?>> getTables() {
         return Arrays.<Table<?>>asList(
-            Test.TEST);
+            MyTable.MY_TABLE);
+    }
+
+    @Override
+    public final List<UDT<?>> getUDTs() {
+        return Arrays.<UDT<?>>asList(
+            MyUdt.MY_UDT);
     }
 }

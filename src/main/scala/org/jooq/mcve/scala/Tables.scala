@@ -4,16 +4,16 @@
 package org.jooq.mcve.scala
 
 
-import org.jooq.mcve.scala.tables.Test
+import org.jooq.mcve.scala.tables.MyTable
 
 
 /**
- * Convenience access to all tables in MCVE.
+ * Convenience access to all tables in mcve.
  */
 object Tables {
 
   /**
-   * The table <code>MCVE.TEST</code>.
+   * The table <code>mcve.my_table</code>.
    */
-  lazy val TEST = Test.TEST
+  lazy val MY_TABLE = MyTable.MY_TABLE
 }

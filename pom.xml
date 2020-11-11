@@ -11,9 +11,9 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <org.jooq.version>3.14.3</org.jooq.version>
-        <db.url>jdbc:h2:~/mcve</db.url>
-        <db.username>sa</db.username>
-        <db.password></db.password>
+        <db.url>jdbc:postgresql://localhost:5432/mcve</db.url>
+        <db.username>postgres</db.username>
+        <db.password>poietico</db.password>
         <kotlin.version>1.4.20-RC</kotlin.version>
         <scala.version>2.13.1</scala.version>
     </properties>
@@ -30,6 +30,11 @@
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <version>1.4.200</version>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.9</version>
         </dependency>
 
         <!-- Logging -->
